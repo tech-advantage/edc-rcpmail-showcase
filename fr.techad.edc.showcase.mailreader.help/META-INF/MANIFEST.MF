@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-Vendor: EDC
+Eclipse-BundleShape: dir
+Bundle-Version: 1.0.0.qualifier 
+Bundle-Name: Mail Reader Showcase Help
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: fr.techad.edc.showcase.mailreader.help;singleton:=true

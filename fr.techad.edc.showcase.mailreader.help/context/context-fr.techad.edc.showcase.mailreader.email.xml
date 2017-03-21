@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contexts>
+        <context id="tab" title="Email tab">
+            <description>Tabs allow you to select which message to display.</description>
+                <topic href="html/1/379/4.html" label="How do I use it?"></topic>
+                <topic href="html/2/383.html" label="Opening a message"></topic>
+        </context>
+</contexts>

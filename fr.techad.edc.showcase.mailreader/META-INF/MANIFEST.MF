@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: edc Mail Reader
+Bundle-SymbolicName: fr.techad.edc.showcase.mailreader;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: fr.techad.edc.showcase.mailreader.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.help.ui;bundle-version="4.0.100",
+ org.eclipse.help.webapp;bundle-version="3.7.0",
+ org.eclipse.equinox.http.jetty;bundle-version="3.1.2"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: mailreader.jar

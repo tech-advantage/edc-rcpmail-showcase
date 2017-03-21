@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="fr.techad.edc.showcase.mailreader.MailApplication">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="Mail Reader"
+            class="fr.techad.edc.showcase.mailreader.ui.Perspective"
+            id="edc.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            name="Message"
+            allowMultiple="true"
+            icon="icons/sample2.gif"
+            class="fr.techad.edc.showcase.mailreader.ui.View"
+            id="edc.view">
+      </view>
+      <view
+            name="Mailboxes"
+            allowMultiple="true"
+            icon="icons/sample3.gif"
+            class="fr.techad.edc.showcase.mailreader.ui.NavigationView"
+            id="edc.navigationView">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            name="Mail"
+            id="edc.category">
+      </category>
+      <command
+            name="Open Mailbox"
+            description="Opens a mailbox"
+            categoryId="edc.category"
+            id="edc.open">
+      </command>
+      <command
+            name="Open Message Dialog"
+            description="Open a message dialog"
+            categoryId="edc.category"
+            id="edc.openMessage">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="edc.open"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="CTRL+SHIFT+O">
+      </key>
+      <key
+            commandId="edc.openMessage"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="CTRL+SHIFT+M">
+      </key>
+      <key
+            commandId="org.eclipse.ui.file.exit"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="CTRL+SHIFT+Q">
+      </key>
+      <key
+            commandId="org.eclipse.ui.help.dynamicHelp"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="F1">
+      </key>
+      <key
+            commandId="org.eclipse.ui.help.helpSearch"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="F3">
+      </key>
+      <key
+            commandId="org.eclipse.ui.help.displayHelp"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="F4">
+      </key>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="fr.techad.edc.showcase.mailreader.application"
+            name="edc Mail Reader"
+            description="An Eclipse RCP application to get an example to integrate edc">
+         <property
+               name="aboutText"
+               value="An Eclipse RCP application for edc integration">
+         </property>
+         <property
+               name="windowImages"
+               value="icons/sample3.gif">
+         </property>
+         <property
+               name="aboutImage"
+               value="logo_edc_small.png">
+         </property>
+		 <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini" />
+      </product>
+   </extension>
+
+</plugin>

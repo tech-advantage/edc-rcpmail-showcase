@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+  <extension
+      point="org.eclipse.help.toc">
+    <toc
+        file="toc.xml"
+        primary="true">
+    </toc>
+    <toc
+        file="html/2/toc-2.xml">
+    </toc>
+  </extension>
+  <extension
+      id="fr.techad.edc.showcase.mailreader.help"
+      point="org.eclipse.help.contexts">
+    <contexts
+        plugin="fr.techad.edc.showcase.mailreader.leftmenu"
+        file="context/context-fr.techad.edc.showcase.mailreader.leftmenu.xml">
+    </contexts>
+    <contexts
+        plugin="fr.techad.edc.showcase.mailreader.email"
+        file="context/context-fr.techad.edc.showcase.mailreader.email.xml">
+    </contexts>
+  </extension>
+</plugin>
