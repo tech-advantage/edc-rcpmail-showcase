@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?><target name="edc-rcpmail-showcase" sequenceNumber="1">
+<locations>
+<location path="${eclipse_home}" type="Profile"/>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="com.easydoccontents.extratools.feature.group" version="1.0.0.201705091803"/>
+<repository location="http://dl.easydoccontents.com/updatesite/extratools"/>
+</location>
+</locations>
+</target>

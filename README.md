@@ -10,9 +10,13 @@ This application contains 2 plugins:
 * _fr.techad.edc.showcase.mailreader_: the rcp application
 * _fr.techad.edc.showcases.mailreader.help_: the edc publishing 
  
-Import the project in Eclipse and create a launcher to start the application.
+Import the project in Eclipse, select the target platform and select it as default.
+Use the defined laucnher to start the application.
 
 With **F1**, you will display the **Contextual Help View**. When you click on widget, the contextual help will be updated.
+To display the content helps, click in the menu bar on **Help** > **Help Contents**
+
+The target platform download the packaged mathjax library to render the mathematic formula.
 
 ## How does it work ?
 
