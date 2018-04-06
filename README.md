@@ -3,6 +3,10 @@ Eclipse RCP application for edc integration
 
 This example is based on Eclipse RCP. The goal is to explain how can you integrate edc in your Eclipse RCP application.
 
+## edc Version
+
+Current release is compatible with edc v2.1+
+
 ## The application
 
 This application contains 2 plugins:
